@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>update-alternatives使用方法 | 深度睡眠研究所</title>
+  <title>【2019-03-07】使用ffmpeg分离多音轨 | 深度睡眠研究所</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在debian系统中，update-alternatives是专门维护系统命令链接符的工具，其可以对某个工具的多个软件版本进行管理，通过它可以很方便的设置系统默认使用哪个命令的哪个软件版本。总的来说，此命令类似windows下的默认程序设置(首选项)  设置Java环境变量1234update-alternatives --install /usr/bin/java java /opt/jdk1">
-<meta name="keywords" content="update-alternatives">
+  <meta name="description" content="最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。">
+<meta name="keywords" content="ffmpeg">
 <meta property="og:type" content="article">
-<meta property="og:title" content="update-alternatives使用方法">
-<meta property="og:url" content="http://yoursite.com/2018/07/31/update-alternatives-usage/index.html">
+<meta property="og:title" content="【2019-03-07】使用ffmpeg分离多音轨">
+<meta property="og:url" content="http://yoursite.com/2019/04/07/20190407-ffmpeg_separate_audio/index.html">
 <meta property="og:site_name" content="深度睡眠研究所">
-<meta property="og:description" content="在debian系统中，update-alternatives是专门维护系统命令链接符的工具，其可以对某个工具的多个软件版本进行管理，通过它可以很方便的设置系统默认使用哪个命令的哪个软件版本。总的来说，此命令类似windows下的默认程序设置(首选项)  设置Java环境变量1234update-alternatives --install /usr/bin/java java /opt/jdk1">
+<meta property="og:description" content="最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-08-21T00:00:30.168Z">
+<meta property="og:image" content="http://yoursite.com/2019/04/07/20190407-ffmpeg_separate_audio/ffmpeg.jpg">
+<meta property="og:updated_time" content="2019-04-07T15:48:16.598Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="update-alternatives使用方法">
-<meta name="twitter:description" content="在debian系统中，update-alternatives是专门维护系统命令链接符的工具，其可以对某个工具的多个软件版本进行管理，通过它可以很方便的设置系统默认使用哪个命令的哪个软件版本。总的来说，此命令类似windows下的默认程序设置(首选项)  设置Java环境变量1234update-alternatives --install /usr/bin/java java /opt/jdk1">
+<meta name="twitter:title" content="【2019-03-07】使用ffmpeg分离多音轨">
+<meta name="twitter:description" content="最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/07/20190407-ffmpeg_separate_audio/ffmpeg.jpg">
   
     <link rel="alternative" href="/atom.xml" title="深度睡眠研究所" type="application/atom+xml">
   
@@ -189,34 +191,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-update-alternatives-usage" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="[post]-20190407-ffmpeg_separate_audio" class="article article-type-[post] " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      update-alternatives使用方法
+      【2019-03-07】使用ffmpeg分离多音轨
     </h1>
   
 
         
-        <a href="/2018/07/31/update-alternatives-usage/" class="archive-article-date">
-  	<time datetime="2018-07-30T23:04:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
+        <a href="/2019/04/07/20190407-ffmpeg_separate_audio/" class="archive-article-date">
+  	<time datetime="2019-04-07T13:23:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>在debian系统中，update-alternatives是专门维护系统命令链接符的工具，其可以对某个工具的多个软件版本进行管理，通过它可以很方便的设置系统默认使用哪个命令的哪个软件版本。总的来说，此命令类似windows下的默认程序设置(首选项)</p>
+        <p><img src="/2019/04/07/20190407-ffmpeg_separate_audio/ffmpeg.jpg" alt="ffmpeg"></p>
+<blockquote>
+<p>最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。</p>
 </blockquote>
-<h4 id="设置Java环境变量"><a href="#设置Java环境变量" class="headerlink" title="设置Java环境变量"></a>设置Java环境变量</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_111/bin/java 1 </span><br><span class="line">update-alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_111/bin/javac 1 </span><br><span class="line">update-alternatives --set java /opt/jdk1.8.0_111/bin/java </span><br><span class="line">update-alternatives --set javac /opt/jdk1.8.0_111/bin/javac</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h4 id="常用的替代方法"><a href="#常用的替代方法" class="headerlink" title="常用的替代方法"></a>常用的替代方法</h4><p>修改/etc/profile文件，追加path路径<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/jdk1.8.0_111/</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH</span><br></pre></td></tr></table></figure></p>
-<p>最后使其立即生效<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></p>
-<h4 id="在-usr-bin做软连接"><a href="#在-usr-bin做软连接" class="headerlink" title="在/usr/bin做软连接"></a>在/usr/bin做软连接</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/ffmpeg/bin/ffmpeg /usr/bin/ffmpeg</span><br></pre></td></tr></table></figure>
+<h2 id="关于音源"><a href="#关于音源" class="headerlink" title="关于音源"></a>关于音源</h2><p>通常视频都为单音源，某些多语种影片会设置多语种音源格式，如常见的英语、粤语、日语、韩语等等。渲染时会把这些音源都打包进去，所以比较同清晰度下占用更多空间。同理，可以通过逆过程将这些音源导出来。</p>
+<h2 id="查看音源"><a href="#查看音源" class="headerlink" title="查看音源"></a>查看音源</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ffmpeg -i 1554476181257.m4a</span><br><span class="line">ffmpeg version N-90168-gc0919c4985 Copyright (c) 2000-2018 the FFmpeg developers</span><br><span class="line">  built with gcc 7.3.0 (GCC)</span><br><span class="line">  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-bzlib --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libmfx --enable-amf --enable-cuda --enable-cuvid --enable-d3d11va --enable-nvenc --enable-dxva2 --enable-avisynth</span><br><span class="line">  libavutil      56.  7.101 / 56.  7.101</span><br><span class="line">  libavcodec     58. 13.100 / 58. 13.100</span><br><span class="line">  libavformat    58. 10.100 / 58. 10.100</span><br><span class="line">  libavdevice    58.  2.100 / 58.  2.100</span><br><span class="line">  libavfilter     7. 12.100 /  7. 12.100</span><br><span class="line">  libswscale      5.  0.101 /  5.  0.101</span><br><span class="line">  libswresample   3.  0.101 /  3.  0.101</span><br><span class="line">  libpostproc    55.  0.100 / 55.  0.100</span><br><span class="line">Guessed Channel Layout for Input Stream #0.1 : mono</span><br><span class="line">Input #0, matroska,webm, from '1554476181257.m4a':</span><br><span class="line">  Metadata:</span><br><span class="line">    COPYRIGHT       : kugouktv</span><br><span class="line">    COMMENT         : 860820042559187</span><br><span class="line">    ENCODER         : Lavf57.25.100</span><br><span class="line">  Duration: 00:04:00.38, start: 0.000000, bitrate: 967 kb/s</span><br><span class="line">    Stream #0:0: Audio: mp3, 44100 Hz, stereo, s16p, 128 kb/s (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.379000000</span><br><span class="line">    Stream #0:1: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.373000000</span><br><span class="line">    Stream #0:2: Audio: mp3, 44100 Hz, stereo, s16p, 128 kb/s (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.379000000</span><br><span class="line">At least one output file must be specified</span><br></pre></td></tr></table></figure>
+<p>从上面可以看到<code>1554476181257.m4a</code>文件有三个audio流，<code>Stream #0:0</code>为伴奏，<code>Stream #0:1</code>为人声，<code>Stream #0:2</code>为原唱。默认音源为<code>Stream #0:0</code>，这也就是播放时听到的声音。ffmpeg直接转换时也是输出这个音源（网易云音乐会播放序号最大的<code>Stream #0:2</code>，验证时换其他播放器）。</p>
+<h2 id="提取音源"><a href="#提取音源" class="headerlink" title="提取音源"></a>提取音源</h2><p>本文最重要的其实也就是这行命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ffmpeg -i 1554476181257.m4a -map 0:a:0 0.mp3</span><br></pre></td></tr></table></figure>
+<p><code>-map</code>参数<code>0:a:0</code>的含义为第1个输入项的音频(audio)的第0号音源，也就是输出的0.mp3为伴奏。使用<code>0:a:1</code>就能得到自己的声音了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Stream mapping:</span><br><span class="line">  Stream #0:1 -&gt; #0:0 (pcm_s16le (native) -&gt; mp3 (libmp3lame))</span><br><span class="line">Press [q] to stop, [?] for help</span><br><span class="line">Output #0, mp3, to '1.mp3':</span><br><span class="line">  Metadata:</span><br><span class="line">    TCOP            : kugouktv</span><br><span class="line">    COMMENT         : 860820042559187</span><br><span class="line">    TSSE            : Lavf58.10.100</span><br><span class="line">    Stream #0:0: Audio: mp3 (libmp3lame), 44100 Hz, mono, s16p (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.373000000</span><br><span class="line">      encoder         : Lavc58.13.100 libmp3lame</span><br><span class="line">size=    1878kB time=00:04:00.37 bitrate=  64.0kbits/s speed=33.3x</span><br><span class="line">video:0kB audio:1878kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.014663%</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本来一行命令搞定的事情，真不打算写下来。可能是因为万能的百毒吧，你总能搜出各种奇葩的做法。如使用PotPlayer播放时切换到相应的音源将其录下来。这种做法跟使用sleep方法做排序一样令人发指。视频几个小时的话是不是该睡着了。其次更多的结果是通过C语言调用库解析<code>AVStream</code>结构然后遍历出音源。或许开发的时候很有用但要写程序来解析还是小题大做了。最后还是去翻ffmpeg的官方文档查到这项参数。感慨还是官网靠谱啊，后面还有个有用的参数<code>-filter_complex</code>可以学习下<a href="https://www.cnblogs.com/tocy/p/ffmpeg-filter-intro.html" target="_blank" rel="noopener">ffmpeg filter</a>滤镜效果，可能对以后有帮助。</p>
 
       
 
@@ -251,7 +258,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">update-alternatives</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
@@ -263,7 +270,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/linux/" class="article-tag-list-link color1">linux</a>
+        			<a href="/categories/ffmpeg/" class="article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
@@ -318,7 +325,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/31/update-alternatives-usage/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/07/20190407-ffmpeg_separate_audio/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,18 +339,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/09/20190309-vscode_on_server/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          【2019-03-09】在远程服务器上运行vscode
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/07/30/install-samba-and-config/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">samba的安装与配置</div>
+    <a href="/2019/03/13/【2019-03-13]】使用hexo搭建github博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【2019-03-13】使用hexo搭建github博客</div>
       <i class="icon-circle-right"></i>
     </a>
   
