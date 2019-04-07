@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Category: vscode | 深度睡眠研究所</title>
+  <title>【2019-03-07】使用ffmpeg分离多音轨 | 深度睡眠研究所</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="深度睡眠研究所">
-<meta property="og:url" content="http://yoursite.com/categories/vscode/index.html">
+  <meta name="description" content="最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。">
+<meta name="keywords" content="ffmpeg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【2019-03-07】使用ffmpeg分离多音轨">
+<meta property="og:url" content="http://yoursite.com/2019/04/07/【2019-04-07】使用ffmpeg分离多音轨/index.html">
 <meta property="og:site_name" content="深度睡眠研究所">
+<meta property="og:description" content="最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。">
 <meta property="og:locale" content="zh">
+<meta property="og:image" content="http://yoursite.com/2019/04/07/【2019-04-07】使用ffmpeg分离多音轨/ffmpeg.jpg">
+<meta property="og:updated_time" content="2019-04-07T15:37:38.386Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深度睡眠研究所">
+<meta name="twitter:title" content="【2019-03-07】使用ffmpeg分离多音轨">
+<meta name="twitter:description" content="最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/07/【2019-04-07】使用ffmpeg分离多音轨/ffmpeg.jpg">
   
     <link rel="alternative" href="/atom.xml" title="深度睡眠研究所" type="application/atom+xml">
   
@@ -184,71 +191,190 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="[post]-【2019-04-07】使用ffmpeg分离多音轨" class="article article-type-[post] " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/【2019-03-09]】在远程服务器上运行vscode/" class="archive-article-date">
-  	<time datetime="2019-03-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/【2019-03-09]】在远程服务器上运行vscode/">【2019-03-09】在远程服务器上运行vscode</a>
+    <h1 class="article-title" itemprop="name">
+      【2019-03-07】使用ffmpeg分离多音轨
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/04/07/【2019-04-07】使用ffmpeg分离多音轨/" class="archive-article-date">
+  	<time datetime="2019-04-07T13:23:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/2019/04/07/【2019-04-07】使用ffmpeg分离多音轨/ffmpeg.jpg" alt="ffmpeg"></p>
+<blockquote>
+<p>最近研究了一下某K歌软件的实现原理，与KTV模式相同的是伴奏和原唱模式，此外还有一个智能模式相当于智能提词。不得不说做得越来越好了，高歌一曲后想用Au修一下效果。翻遍目录，发现只有一个m4a文件。应该是做了混音，PotPlayer上能看到三个音源。这时候ffmpeg就派上用场了。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="关于音源"><a href="#关于音源" class="headerlink" title="关于音源"></a>关于音源</h2><p>通常视频都为单音源，某些多语种影片会设置多语种音源格式，如常见的英语、粤语、日语、韩语等等。渲染时会把这些音源都打包进去，所以比较同清晰度下占用更多空间。同理，可以通过逆过程将这些音源导出来。</p>
+<h2 id="查看音源"><a href="#查看音源" class="headerlink" title="查看音源"></a>查看音源</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ffmpeg -i 1554476181257.m4a</span><br><span class="line">ffmpeg version N-90168-gc0919c4985 Copyright (c) 2000-2018 the FFmpeg developers</span><br><span class="line">  built with gcc 7.3.0 (GCC)</span><br><span class="line">  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-bzlib --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libmfx --enable-amf --enable-cuda --enable-cuvid --enable-d3d11va --enable-nvenc --enable-dxva2 --enable-avisynth</span><br><span class="line">  libavutil      56.  7.101 / 56.  7.101</span><br><span class="line">  libavcodec     58. 13.100 / 58. 13.100</span><br><span class="line">  libavformat    58. 10.100 / 58. 10.100</span><br><span class="line">  libavdevice    58.  2.100 / 58.  2.100</span><br><span class="line">  libavfilter     7. 12.100 /  7. 12.100</span><br><span class="line">  libswscale      5.  0.101 /  5.  0.101</span><br><span class="line">  libswresample   3.  0.101 /  3.  0.101</span><br><span class="line">  libpostproc    55.  0.100 / 55.  0.100</span><br><span class="line">Guessed Channel Layout for Input Stream #0.1 : mono</span><br><span class="line">Input #0, matroska,webm, from '1554476181257.m4a':</span><br><span class="line">  Metadata:</span><br><span class="line">    COPYRIGHT       : kugouktv</span><br><span class="line">    COMMENT         : 860820042559187</span><br><span class="line">    ENCODER         : Lavf57.25.100</span><br><span class="line">  Duration: 00:04:00.38, start: 0.000000, bitrate: 967 kb/s</span><br><span class="line">    Stream #0:0: Audio: mp3, 44100 Hz, stereo, s16p, 128 kb/s (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.379000000</span><br><span class="line">    Stream #0:1: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.373000000</span><br><span class="line">    Stream #0:2: Audio: mp3, 44100 Hz, stereo, s16p, 128 kb/s (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.379000000</span><br><span class="line">At least one output file must be specified</span><br></pre></td></tr></table></figure>
+<p>从上面可以看到<code>1554476181257.m4a</code>文件有三个audio流，<code>Stream #0:0</code>为伴奏，<code>Stream #0:1</code>为人声，<code>Stream #0:2</code>为原唱。默认音源为<code>Stream #0:0</code>，这也就是播放时听到的声音。ffmpeg直接转换时也是输出这个音源（网易云音乐会播放序号最大的<code>Stream #0:2</code>，验证时换其他播放器）。</p>
+<h2 id="提取音源"><a href="#提取音源" class="headerlink" title="提取音源"></a>提取音源</h2><p>本文最重要的其实也就是这行命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ffmpeg -i 1554476181257.m4a -map 0:a:0 0.mp3</span><br></pre></td></tr></table></figure>
+<p><code>-map</code>参数<code>0:a:0</code>的含义为第1个输入项的音频(audio)的第0号音源，也就是输出的0.mp3为伴奏。使用<code>0:a:1</code>就能得到自己的声音了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Stream mapping:</span><br><span class="line">  Stream #0:1 -&gt; #0:0 (pcm_s16le (native) -&gt; mp3 (libmp3lame))</span><br><span class="line">Press [q] to stop, [?] for help</span><br><span class="line">Output #0, mp3, to '1.mp3':</span><br><span class="line">  Metadata:</span><br><span class="line">    TCOP            : kugouktv</span><br><span class="line">    COMMENT         : 860820042559187</span><br><span class="line">    TSSE            : Lavf58.10.100</span><br><span class="line">    Stream #0:0: Audio: mp3 (libmp3lame), 44100 Hz, mono, s16p (default)</span><br><span class="line">    Metadata:</span><br><span class="line">      DURATION        : 00:04:00.373000000</span><br><span class="line">      encoder         : Lavc58.13.100 libmp3lame</span><br><span class="line">size=    1878kB time=00:04:00.37 bitrate=  64.0kbits/s speed=33.3x</span><br><span class="line">video:0kB audio:1878kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.014663%</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本来一行命令搞定的事情，真不打算写下来。可能是因为万能的百毒吧，你总能搜出各种奇葩的做法。如使用PotPlayer播放时切换到相应的音源将其录下来。这种做法跟使用sleep方法做排序一样令人发指。视频几个小时的话是不是该睡着了。其次更多的结果是通过C语言调用库解析<code>AVStream</code>结构然后遍历出音源。或许开发的时候很有用但要写程序来解析还是小题大做了。最后还是去翻ffmpeg的官方文档查到这项参数。感慨还是官网靠谱啊，后面还有个有用的参数<code>-filter_complex</code>可以学习下<a href="https://www.cnblogs.com/tocy/p/ffmpeg-filter-intro.html" target="_blank" rel="noopener">ffmpeg filter</a>滤镜效果，可能对以后有帮助。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vscode</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/vscode/" class="article-tag-list-link color2">vscode</a>
+        			<a href="/categories/ffmpeg/" class="article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/07/【2019-04-07】使用ffmpeg分离多音轨/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/03/13/【2019-03-13]】使用hexo搭建github博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【2019-03-13】使用hexo搭建github博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -271,10 +397,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
